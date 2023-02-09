@@ -1,0 +1,431 @@
+ :root {
+    
+    --black-contrast: #21292c;
+    --blue-bootstrap: #007bff;
+    --absolute-white: #fff;
+    --absolute-black: #000;
+    --trasition-blue: #1f65b6;
+    --btn-gray: #d0d1d1;
+    --hover-gray: #818081;
+    --steel-color: #b1a7ba;
+    --water-color: #3399ff;
+    --bug-color: #a7b33b;
+    --dragon-color: #7365ab;
+    --electric-color: #f4cb5c;
+    --ghost-color: #6d6895;
+    --fire-color: #de5039;
+    --fairy-color: #f2b4eb;
+    --ice-color: #90d9e5;
+    --fighting-color: #dc9c8f;
+    --normal-color: #dbd3d1;
+    --grass-color: #a9df8f;
+    --psychic-color: #f89dbb;
+    --rock-color: #bba96f;
+    --dark-color: #4f4436;
+    --ground-color: #ecd495;
+    --poison-color: #9c5e8c;
+    --flying-color: #6590c8;
+    --unknown-color: #699d8e;
+    --shadow-color: #000000;
+  }
+
+  .filterbydb{
+    padding: 3px;
+    border: solid 2px purple;
+
+    /* box-shadow:inset #8f0bb8 0px 2px 5px -1px,#000000 1px 0 2px; */
+    box-shadow:inset #fd1717 0px 5px 8px -1px,#ff00c8 1px 0 2px;
+    border-radius: 8px;
+   
+    font-size: 1rem;
+    font-weight: bold;
+    color: purple;
+    background-color: black;
+  }
+
+
+
+
+
+  .detailscontainer {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 40px;
+    background-image: url("https://i.pinimg.com/originals/97/9e/ec/979eeca4fc2694a933cc2033f0032c36.gif");
+    background-size: cover;
+	  background-position: center;
+    
+  }
+  
+  /* .wikiimg {
+    align-items: center;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-rows: 30px 30px;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--absolute-white);
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 70px;
+    padding-top: 20px;
+  
+  } */
+  
+  .wikiimg img {
+    /* width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 10px; */
+    font-size: 1rem;
+    box-shadow:inset #fd1717 0px 5px 8px -1px,#ff00c8 1px 0 2px;
+    border: none;
+    border-radius: 80px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(136,47,167);
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 1s;
+    background-image: url('https://gifdb.com/images/high/gengar-umbrella-hex-maniac-pokemon-7e9wn88i0brave5k.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    width: 120px;
+    grid-template-rows: 30px 30px;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--absolute-white);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: red;
+    max-width: 500px;
+    margin: 0 auto;
+  
+
+  }
+  
+  .link {
+
+    text-decoration: none;
+    
+  }
+  
+  .details {
+    margin: 0 auto;
+    background-color: #eee;
+    max-width: 500px;
+    min-width: 320px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4);
+    position: relative;
+
+
+    padding: 3px;
+    border: solid 2px purple;
+
+    /* box-shadow:inset #8f0bb8 0px 2px 5px -1px,#000000 1px 0 2px; */
+    box-shadow:inset #fd1717 0px 5px 8px -1px,#ff00c8 1px 0 2px;
+    border-radius: 8px;
+   
+    font-size: 1rem;
+    font-weight: bold;
+    color: purple;
+    background-color: rgba(0, 0, 0, 0.4);
+
+
+
+  }
+  
+
+ 
+
+
+
+  .created {
+    padding: 3px;
+    border: solid 2px black;
+    color: purple;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease 0s;
+    color: black;
+
+
+
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-weight: bold;
+    background-color: var(--absolute-white);
+    padding: 8px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    padding: 3px;
+    border: solid 2px black;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: purple;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease 0s;
+
+  }
+  .created:hover{
+    background-color: rgba(0, 0, 0);
+    color: purple;
+    transform: translateY(-7px);
+    border-radius: 30px;
+    border: solid 2px purple;
+    box-shadow:inset #fd1717 0px 5px 8px -1px,#ff00c8 1px 0 2px; 
+  }
+
+  
+  .title {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    border: solid 2px black;
+    color: purple;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease 0s;
+    color: black;
+    border-radius: 30px;
+  }
+  .title:hover{
+    background-color: rgba(0, 0, 0);
+    color: purple;
+    transform: translateY(-7px);
+    border-radius: 30px;
+    border: solid 2px purple;
+    box-shadow:inset #fd1717 0px 5px 8px -1px,#ff00c8 1px 0 2px; 
+  }
+  
+  .types {
+    justify-content: center;
+    display: flex;
+  }
+  
+  .types p {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 16px;
+    width: 100px;
+  }
+  
+  .flexdata {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    
+  }
+  
+  .pokeimg {
+    width: 260px;
+    height: 260px;
+    
+  }
+  
+  @media (max-width: 380px) {
+    .pokeimg {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+
+  
+  .dataskill p {
+    transition: all 0.3s ease 0s;
+   
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+
+    border: solid 2px black;
+   
+    color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+
+  }
+  .dataskill p:hover{
+
+    color: purple;
+    transform: translateY(-7px);
+    background-color: rgba(0, 0, 0);
+    color: purple;
+    transform: translateY(-7px);
+    border-radius: 30px;
+    border: solid 2px purple;
+    box-shadow:inset #fd1717 0px 5px 8px -1px,#ff00c8 1px 0 2px; 
+  }
+  .normal {
+    padding: 3px;
+    border: solid 2px var(--normal-color);
+    background-color: var(--normal-color);
+    border-radius: 8px;
+  }
+  
+  .fighting {
+    padding: 3px;
+    border: solid 2px var(--fighting-color);
+    background-color: var(--fighting-color);
+    border-radius: 8px;
+  }
+  
+  .flying {
+    padding: 3px;
+    border: solid 2px var(--flying-color);
+    background-color: var(--flying-color);
+    border-radius: 8px;
+  }
+  
+  .poison {
+    padding: 3px;
+    border: solid 2px var(--poison-color);
+    background-color: var(--poison-color);
+    color: var(--absolute-white);
+    border-radius: 8px;
+  }
+  
+  .ground {
+    padding: 3px;
+    border: solid 2px var(--ground-color);
+    background-color: var(--ground-color);
+    border-radius: 8px;
+  }
+  
+  .rock {
+    padding: 3px;
+    border: solid 2px var(--rock-color);
+    background-color: var(--rock-color);
+    border-radius: 8px;
+  }
+  
+  .elemen {
+    padding: 3px;
+    border-radius: 30px;
+    border: solid 2px black;
+    color: purple;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease 0s;
+    color: black;
+  }
+
+  .elemen:hover{
+    background-color: rgba(0, 0, 0);
+    color: purple;
+    transform: translateY(-7px);
+    border-radius: 30px;
+    border: solid 2px purple;
+    box-shadow:inset #fd1717 0px 5px 8px -1px,#ff00c8 1px 0 2px; 
+  }
+
+  .ghost {
+    padding: 3px;
+    border: solid 2px var(--ghost-color);
+    background-color: var(--ghost-color);
+    color: var(--absolute-white);
+    border-radius: 8px;
+  }
+  
+  .steel {
+    padding: 3px;
+    border: solid 2px var(--steel-color);
+    background-color: var(--steel-color);
+    border-radius: 8px;
+  }
+  
+  .fire {
+    padding: 3px;
+    border: solid 2px var(--fire-color);
+    background-color: var(--fire-color);
+    border-radius: 8px;
+  }
+  
+  .water {
+    padding: 3px;
+    border: solid 2px var(--water-color);
+    background-color: var(--water-color);
+    border-radius: 8px;
+  }
+  
+  .grass {
+    padding: 3px;
+    border: solid 2px var(--grass-color);
+    background-color: var(--grass-color);
+    border-radius: 8px;
+  }
+  
+  .electric {
+    padding: 3px;
+    border: solid 2px var(--electric-color);
+    background-color: var(--electric-color);
+    border-radius: 8px;
+  }
+  
+  .psychic {
+    padding: 3px;
+    border: solid 2px var(--psychic-color);
+    background-color: var(--psychic-color);
+    border-radius: 8px;
+  }
+  
+  .ice {
+    padding: 3px;
+    border: solid 2px var(--ice-color);
+    background-color: var(--ice-color);
+    border-radius: 8px;
+  }
+  
+  .dragon {
+    padding: 3px;
+    border: solid 2px var(--dragon-color);
+    background-color: var(--dragon-color);
+    color: var(--absolute-white);
+    border-radius: 8px;
+  }
+  
+  .dark {
+    padding: 3px;
+    border: solid 2px var(--dark-color);
+    background-color: var(--dark-color);
+    color: var(--absolute-white);
+    border-radius: 8px;
+  }
+  
+  .fairy {
+    padding: 3px;
+    border: solid 2px var(--fairy-color);
+    background-color: var(--fairy-color);
+    border-radius: 8px;
+  }
+  
+  .unknown {
+    padding: 3px;
+    border: solid 2px var(--unknown-color);
+    background-color: var(--unknown-color);
+    border-radius: 8px;
+  }
+  
+  .shadow {
+    padding: 3px;
+    border: solid 2px var(--shadow-color);
+    background-color: var(--shadow-color);
+    color: var(--absolute-white);
+    border-radius: 8px;
+  }
+   

@@ -1,0 +1,164 @@
+.landingPageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+	width: 100%;
+	background-image: url("https://art.ngfiles.com/images/2987000/2987715_laceyxitzal_hex-maniac-mini-project.gif?f1673720791");
+    background-size: cover;
+	background-position: center;
+    
+
+}
+
+.loadingApp{
+    font-size: 1.6rem;
+    color: rgba(220, 246, 255, 0.9);
+	animation-name: flash;
+	animation-duration: 0.4s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+}
+
+.landing{
+	animation-name: flash;
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+    
+}
+
+.landingBtn {
+    cursor: pointer;
+	box-shadow:inset #ff0000 0px 5px 8px -1px,#ff00eab9 1px 3px 2px;
+	border-radius:50%;
+	text-align:center;
+	vertical-align:middle;
+	display:inline-block;
+	font-size:1rem;
+	color:rgba(0, 0, 0, 0.979);
+	width:12rem;
+	height:12rem;
+	padding:1rem;
+	border-color:#ff00eab9;
+	border-width:0.1rem;
+	border-style: solid;
+	animation-name: bounceInDown;
+   
+	animation-duration: 3s;
+	animation-fill-mode: both;
+	background-image: url("https://i.pinimg.com/originals/77/cd/04/77cd044d5c59a52cf60a91bf3dfeffd4.gif");
+    background-size: 21rem;
+	background-repeat: no-repeat;
+	background-position: center;
+    transition: transform 2s ease-in-out;
+
+    
+}
+
+.landingBtn:active {
+	box-shadow:inset #fd1717 0px 5px 8px -1px,#ff00c8 1px 0 2px;
+	box-shadow:inset #0f2fe4 0px 5px 8px -1px,#00ff73 1px 0 2px;
+	position:relative;
+	top:0.3rem;
+	background-image: url("https://i.pinimg.com/originals/77/cd/04/77cd044d5c59a52cf60a91bf3dfeffd4.gif");
+    background-size: 21rem;
+	background-repeat: no-repeat;
+	background-position: center;
+    
+}
+
+.landingBtn:hover {
+    transform: rotate(360deg) scale(1.5);
+	background:rgba(241, 5, 5, 0.8);
+	background-image: url("https://i.pinimg.com/originals/77/cd/04/77cd044d5c59a52cf60a91bf3dfeffd4.gif");
+    background-size: 21rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.9;
+	color:rgba(255, 255, 255, 0.7);
+	font-size:4.2rem; 
+    animation: transform 2s;
+    transform: rotate(360deg) scale(1.5);
+}
+
+@keyframes transform {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+@keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+	
+	25%, 75% {
+	opacity: 0.5;
+	}
+}
+
+@keyframes bounceInDown {
+	0%, 60%, 75%, 90%, 100% {
+		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -3000px, 0);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translate3d(0, 25px, 0);
+	}
+
+	75% {
+		transform: translate3d(0, -10px, 0);
+	}
+
+	90% {
+		transform: translate3d(0, 5px, 0);
+	}
+
+	100% {
+		transform: none;
+	}
+}
+
+
+
+
+@keyframes example {
+	0%, 60%, 75%, 90%, 100% {
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        
+	}
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -3000px, 0);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translate3d(0, 25px, 0);
+	}
+
+	75% {
+		transform: translate3d(0, -10px, 0);
+	}
+
+	90% {
+		transform: translate3d(0, 5px, 0);
+	}
+
+	100% {
+		transform: none;
+	}
+}
