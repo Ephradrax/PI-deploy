@@ -20,7 +20,7 @@ export const pokeAction = {
 export function getAllPokemons() {
   return async function (dispatch) {
     try {
-        let json = await axios.get('http://localhost:3001/Pokemons');
+        let json = await axios.get('https://pi-deploy-production.up.railway.app/Pokemons');
         return dispatch({
             type: pokeAction.GET_ALL_POKEMONS,
             payload: json.data
@@ -36,7 +36,7 @@ export function getAllPokemons() {
 export function getPokemon(name) {
   return async function (dispatch) {
     try {
-      const pokemon = await axios(`http://localhost:3001/pokemons?name=${name}`
+      const pokemon = await axios(`https://pi-deploy-production.up.railway.app/pokemons?name=${name}`
       );
       return dispatch({
         type: pokeAction.GET_POKEMON,
@@ -53,7 +53,7 @@ export function getPokemon(name) {
 export function postPokemon(dataPokemon) {
   return async function (dispatch) {
     try {
-      const pokemon = await axios.post("http://localhost:3001/Pokemons", dataPokemon);
+      const pokemon = await axios.post("https://pi-deploy-production.up.railway.app/", dataPokemon);
        alert("Pokemon Creado");
         dispatch({
         type: pokeAction.POST_POKEMON,
@@ -69,7 +69,7 @@ export function postPokemon(dataPokemon) {
 export function getTypes() {
   return async function (dispatch) {
     try {
-      const response = await fetch("http://localhost:3001/Types");
+      const response = await fetch("https://pi-deploy-production.up.railway.app/Types");
       const data = await response.json();
       return dispatch({
         type: pokeAction.GET_TYPES,
@@ -116,7 +116,7 @@ export function sortPokemonsByAttack(sort) {
 export function getDetails(id) {
    return async function (dispatch) {
      try {
-       let pokemon = await axios(`http://localhost:3001/Pokemons/${id}`);
+       let pokemon = await axios(`https://pi-deploy-production.up.railway.app/Pokemons/${id}`);
        return dispatch({
          type: pokeAction.GET_DETAILS,
          payload: pokemon.data,
